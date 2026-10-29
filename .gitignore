@@ -56,7 +56,8 @@ pnpm-lock.yaml
 .DS_Store
 Thumbs.db
 
-# ─── Uploads / Temp ─────────────────────────────────────────────
+# ─── Streamlit Secrets ──────────────────────────────────────────
+.streamlit/secrets.toml
 uploads/
 tmp/
 *.log

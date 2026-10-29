@@ -1,6 +1,9 @@
 # Multimodal Construction Intelligence Platform
 
-Multimodal AI decision-support platform for site engineers, contractors, and project managers. Built with a **FastAPI** backend and a **React 18 / Vite** frontend, powered by **Groq** vision and text models.
+Multimodal AI decision-support platform for site engineers, contractors, and project managers. Powered by **Groq** vision and text models.
+Available in two deployment flavors:
+1. **Streamlit App (`streamlit_app.py`)**: Standalone pure-Python app ready for **Streamlit Community Cloud** ([Deployment Guide](STREAMLIT_DEPLOYMENT.md)).
+2. **Full-Stack App**: **FastAPI** backend + **React 18 / Vite** frontend.
 
 All financial outputs and cost calculations are localized to **Indian Rupees (₹ / INR)**.
 
@@ -10,6 +13,12 @@ All financial outputs and cost calculations are localized to **Indian Rupees (�
 
 ```text
 Multimodal-Construction-Intelligence-Platform/
+├── .streamlit/                 # Streamlit Cloud configuration & secrets template
+│   ├── config.toml             # Theme (Dark/Amber) & server configuration
+│   └── secrets.toml.example    # Secrets template for GROQ_API_KEY
+├── streamlit_app.py            # Standalone Streamlit App (Deploy on Streamlit Cloud)
+├── requirements.txt            # Root dependencies for Streamlit Cloud
+├── STREAMLIT_DEPLOYMENT.md     # Step-by-step Streamlit Cloud deployment guide
 ├── .env.example                # Legacy root placeholder template
 ├── .gitignore                  # Git ignore rules (.env, .venv, node_modules)
 ├── README.md                   # Project documentation
